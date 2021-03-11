@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HATestUnit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <HATestDataItem>
+    <Type>Minimum</Type>
+    <FunctionExpression>x*x</FunctionExpression>
+    <ArgumentsSymbolsItem>x</ArgumentsSymbolsItem>
+    <RangesItem>
+      <Min>-2</Min>
+      <Max>2</Max>
+    </RangesItem>
+    <ExpectedValue>0</ExpectedValue>
+  </HATestDataItem>
+
+  <HATestDataItem>
+    <Type>Maximum</Type>
+    <FunctionExpression>(Sqrt(x*x)+Sqrt(y*y))*Exp((-0.0625)*(x*x +y*y))</FunctionExpression>
+    <ArgumentsSymbolsItem>x</ArgumentsSymbolsItem>
+	<ArgumentsSymbolsItem>y</ArgumentsSymbolsItem>
+    <RangesItem>
+      <Min>-5</Min>
+      <Max>5</Max>
+    </RangesItem>
+    <RangesItem>
+      <Min>-5</Min>
+      <Max>5</Max>
+    </RangesItem>
+    <ExpectedValue>2.42612</ExpectedValue>
+  </HATestDataItem>
+
+</HATestUnit>
